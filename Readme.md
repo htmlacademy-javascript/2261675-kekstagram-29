@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
-* Студент: [Влад Воробьев](https://up.htmlacademy.ru/javascript/29/user/2261675).
-* Наставник: `Неизвестно`.
+- Студент: [Влад Воробьев](https://up.htmlacademy.ru/javascript/29/user/2261675).
+- Наставник: [Никита Сигов] (https://htmlacademy.ru/profile/crazer).
 
 ---
 
