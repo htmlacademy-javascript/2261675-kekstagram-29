@@ -8,9 +8,9 @@ const stringLength = function (string, maxlength) {
 
 stringLength('проверяемая строка', 10);
 
-function palidrome(str) {
-  str = str.toLowerCase().replceAll('');
+function checkPalidrome(str) {
+  str = str.toLowerCase().replaceAll(' ','');
   return str === str.split('').reverse().join('');
 }
 
-palidrome();
+checkPalidrome('kekc');
