@@ -6,4 +6,11 @@ const stringLength = function (string, maxlength) {
   }
 };
 
-stringLength('проверяемая строка', 10);
+stringLength("проверяемая строка", 10);
+
+function palidrome(str) {
+  str = str.toLowerCase().replceAll("");
+  return str === str.split("").reverse().join("");
+}
+
+palidrome();
