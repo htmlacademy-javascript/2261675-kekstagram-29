@@ -60,12 +60,12 @@ const createComment = () => ({
   avatar: `img/avatar-${getRandomInteger(1, AVATAR)}.svg`,
   message: createMessage(),
   name: getRandomArrayElement(AUTOR),
-});;
+});
 
 const createPicture = (index) => ({
   id: index,
   url: `photos/${index}.jpg`,
-  description: getRandomArrayElement(COMMENT_PHOTO),
+  description: getRandomArrayElement(MESSAGE),
   likes: getRandomInteger(LIKES_MIN, LIKES_MAX),
   comment: Array.from(
     {length: getRandomInteger(0, COMMENTS_MAX) },
