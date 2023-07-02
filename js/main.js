@@ -50,9 +50,10 @@ const createIdGenerator = () => {
 
 const generateCommentId = createIdGenerator();
 
-const createMessage = () => getRandomInteger(0, 2)
-  ? getRandomArrayElement(COMMENT_PHOTO)
-  : `${getRandomArrayElement(COMMENT_PHOTO)} ${getRandomArrayElement(COMMENT_PHOTO)}`;
+const createMessage = () => Array.from(
+  { length: getRandomInteger(1,2) },
+  () => getRandomArrayElement(COMMENT_PHOTO),
+).join(' ');
 
 
 const createComment = () => ({
@@ -78,5 +79,6 @@ const getPictures = () => Array.from(
   { length: ID_PHOTO },
   (_, pictureIndex) => createPicture(pictureIndex + 1),
 );
+
 
 getPictures();
