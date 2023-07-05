@@ -12,9 +12,9 @@ const creatThumbnail = ({comments, description, likes, url }) => {
   return thubnail;
 };
 
-const renderThubnails = (picture) => {
+const renderThubnails = (pictures) => {
   const fragment = document.createDocumentFragment();
-  picture.forEach((picture) => {
+  pictures.forEach((picture) => {
     const thubnail = creatThumbnail(picture);
     fragment.append(thubnail);
   });
