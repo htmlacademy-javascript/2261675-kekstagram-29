@@ -1,6 +1,6 @@
 import {getPictures} from './data.js';
-import { renderThubnails } from './thumbnails.js';
+import { renderThumbnails } from './thumbnails.js';
 
-renderThubnails(getPictures());
+renderThumbnails(getPictures());
 
 
