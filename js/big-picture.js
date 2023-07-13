@@ -7,7 +7,7 @@ const commentsLoaderElement = bigPictureElement.querySelector('.comments-loader'
 const bodyElement = document.querySelector('body');
 const cancelButtonElement = bigPictureElement.querySelector('.big-picture__cansel');
 const commentElement = document.querySelector('#comment').content.querySelector('');
-const commentShownCountElement = bigPictureElement.querySelector('.comments-shown-');
+const commentShownCountElement = bigPictureElement.querySelector('.comments-shown');
 
 let commentsShown = 0;
 let comments = [];
